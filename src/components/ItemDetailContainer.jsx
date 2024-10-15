@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
-import Button from "./Button"; // Importar el componente Button
-import StockCount from "./StockCount"; // Importar el componente StockCount
-
+import Button from "./Button";
+import StockCount from "./StockCount";
+import Loading from "./Loading";
 export default function ItemDetailContainer() {
   const { id } = useParams();
   const decodedId = decodeURIComponent(id);
@@ -15,7 +15,7 @@ export default function ItemDetailContainer() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        await new Promise((resolve) => setTimeout(resolve, 1000));
+        await new Promise((resolve) => setTimeout(resolve, 3000));
         const response = await fetch("../src/data/mockData.json");
         const data = await response.json();
 
@@ -42,7 +42,8 @@ export default function ItemDetailContainer() {
     <>
       <div className="card-grid">
         {loading ? (
-          <h2 className="loading">Cargando productos, por favor espere...</h2>
+          // Renderizado del componente Loading mientras se cargan los productos
+          <Loading />
         ) : product.length > 0 ? (
           product.map((item) => (
             <div key={item.id}>
@@ -56,10 +57,10 @@ export default function ItemDetailContainer() {
                   <h3>Precio: ${item.price}</h3>
                   <p>{item.description}</p>
 
-                  {/* Renderizado del componente Button */}
+                  {/* Renderizar componente Button */}
                   <Button onCountChange={handleCountChange} />
 
-                  {/* Renderizado del componente StockCount */}
+                  {/* Renderizar componente StockCount */}
                   <StockCount initialStock={item.stock} count={count} />
                 </div>
               </Link>

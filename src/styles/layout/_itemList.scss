@@ -1,0 +1,35 @@
+%card-box {
+  display: flex;
+  padding: 20px;
+  text-align: center;
+  justify-content: center;
+}
+
+.card-grid {
+  @extend %card-box;
+  justify-content: center;
+  padding: 1rem 5rem 10rem 5rem;
+  h2,
+  h3,
+  p {
+    color: #010b13;
+  }
+
+  h2 {
+    padding: 1rem;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+
+  h3 {
+    padding-top: 1rem;
+    font-size: 2rem;
+    font-weight: 800;
+  }
+
+  p {
+    padding: 1rem 0;
+    font-size: 1.3rem;
+  }
+}

@@ -40,7 +40,7 @@ export default function ItemDetailContainer() {
 
   return (
     <>
-      <div className="card-grid">
+      <div className="card-grid_detail">
         {loading ? (
           // Renderizado del componente Loading mientras se cargan los productos
           <Loading />

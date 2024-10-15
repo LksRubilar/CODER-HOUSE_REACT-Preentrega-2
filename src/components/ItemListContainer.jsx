@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
-import { Link } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import Banner from "./Banner";
 
 export default function ItemListContainer() {
@@ -8,18 +7,9 @@ export default function ItemListContainer() {
 
   const [products, setProducts] = useState([]);
 
-  // useEffect(() => {
-  //   let productsFiltered = categoryId
-  //     ? mockData.filter((product) => product.category === categoryId)
-  //     : mockData;
-
-  //   setProducts(productsFiltered);
-  // }, [categoryId]);
-
   useEffect(() => {
     const fetchData = async () => {
       try {
-        // Simula una solicitud de datos desde una API
         const response = await fetch("../src/data/mockData.json");
         const data = await response.json();
 
@@ -34,18 +24,18 @@ export default function ItemListContainer() {
       }
     };
 
-    fetchData(); // Llama a la función asíncrona para hacer el fetch
+    fetchData();
   }, [categoryId]);
 
   return (
     <>
       <Banner category={categoryId} />
-      <h1 className="main-txt">{categoryId}</h1>
+      <h1 className="main-txt">{categoryId || "Productos"}</h1>
       <div className="card-grid">
         {products.length > 0 ? (
           products.map((product) => (
             <div className="card" key={product.id}>
-              <Link className="" to={`/item/${product.title}`}>
+              <Link to={`/item/${product.title}`}>
                 <h2>{product.title}</h2>
                 <img src={`../src/img/${product.image}.jpg`} alt="" />
                 <h3>

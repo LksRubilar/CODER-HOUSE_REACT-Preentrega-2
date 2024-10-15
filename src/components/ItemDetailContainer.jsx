@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import Button from "./Button";
 import StockCount from "./StockCount";
 import Loading from "./Loading";
+
 export default function ItemDetailContainer() {
   const { id } = useParams();
   const decodedId = decodeURIComponent(id);

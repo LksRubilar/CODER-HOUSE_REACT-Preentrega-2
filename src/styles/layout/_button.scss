@@ -9,6 +9,7 @@
 
 .button-container {
   display: flex;
+  padding-top: 3rem;
 
   .btn-min {
     @extend %btn;

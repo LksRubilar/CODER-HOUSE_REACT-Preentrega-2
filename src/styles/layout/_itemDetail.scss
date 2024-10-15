@@ -8,6 +8,7 @@
 .card-grid {
   justify-content: center;
   padding: 20rem 5rem 10rem 5rem;
+
   .card-item {
     display: grid;
     grid-template-columns: 1fr 2fr; // Dos columnas: 1/3 para card-detail, 2/3 para card-info
@@ -19,7 +20,7 @@
     grid-column: 1 / 2; // Se asegura que esté en la primera columna
     @extend %card-box;
     img {
-      width: 200px;
+      width: 400px;
     }
   }
 
@@ -29,6 +30,11 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start; // Alinea el contenido a la izquierda
+    border: #d5d8dc 0.5px solid;
+    border-radius: 1rem;
+    -webkit-box-shadow: 9px 9px 10px -7px rgba(28, 40, 51, 1);
+    -moz-box-shadow: 9px 9px 10px -7px rgba(28, 40, 51, 1);
+    box-shadow: 9px 9px 10px -7px rgba(28, 40, 51, 1);
 
     h2,
     h3,
@@ -37,6 +43,10 @@
     }
 
     h2 {
+      background-color: #000000;
+      color: #ffffff;
+      border-radius: 1rem;
+      padding: 1rem;
       font-size: 3rem;
       font-weight: 700;
       padding-bottom: 1rem;

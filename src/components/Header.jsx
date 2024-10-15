@@ -6,7 +6,7 @@ export default function Header(img) {
     <header>
       <div className="bg container-full d-flex content-space-between p-vertical header-container">
         <div className="img-div">
-          <Link to={"/Home"}>
+          <Link to={"/"}>
             <img className="logo-nv" src={img.logo} alt="Logo" />
           </Link>
         </div>

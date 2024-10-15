@@ -1,0 +1,29 @@
+%btn {
+  max-width: 10px;
+  padding: 4px 16px;
+  color: #ffffff;
+  border-radius: 0.5rem;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.button-container {
+  display: flex;
+
+  .btn-min {
+    @extend %btn;
+    background-color: red;
+  }
+  .btn-count {
+    margin: 0 1rem;
+    align-self: center;
+    text-align: center;
+    color: #000000;
+    font-weight: 900;
+    font-size: 1.6rem;
+  }
+  .btn-plus {
+    @extend %btn;
+    background-color: #000000;
+  }
+}

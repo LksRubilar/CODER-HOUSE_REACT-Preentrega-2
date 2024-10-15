@@ -1,0 +1,87 @@
+.img-div {
+  width: 150px;
+}
+.w-100 {
+  width: 100%;
+}
+.icon {
+  font-size: 2.4rem;
+  color: black;
+  &:focus,
+  &:hover {
+    color: red;
+  }
+}
+.icon-main {
+  font-size: 4rem;
+  color: black;
+}
+
+body {
+  background-color: #ffff;
+}
+
+.d-flex {
+  display: flex;
+}
+.content-space-between {
+  justify-content: space-between;
+}
+.content-space-center {
+  justify-content: center;
+}
+.content-align-items-center {
+  align-items: center;
+}
+
+.container-full {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.p-vertical {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.bg {
+  background: #ffc300;
+}
+
+.mr {
+  margin-right: 1.6rem;
+}
+
+.d-none {
+  display: none;
+}
+
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+
+@media (max-width: $breakpoint-md) {
+  .container-full {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .position-sm-absolute {
+    position: fixed;
+  }
+  .d-sm-none {
+    display: none;
+  }
+  .d-sm-block {
+    display: block;
+  }
+  .flex-sm-direction {
+    flex-direction: row-reverse;
+  }
+  .mr-sm {
+    margin-right: 1.6rem;
+  }
+}
+@media (min-width: $breakpoint-md) {
+  .w-md-100 {
+    width: 100%;
+  }
+}

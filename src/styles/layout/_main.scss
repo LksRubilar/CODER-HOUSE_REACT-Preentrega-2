@@ -1,0 +1,53 @@
+.main-section {
+  background-color: #ffffff;
+  height: 50rem;
+  margin-top: -9rem;
+  position: relative;
+  z-index: 10;
+}
+
+.main-txt {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 800;
+  color: #4f6274;
+  padding: 2rem 0 6rem 0;
+}
+
+.card-grid {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  .card {
+    display: flex;
+    padding: 20px;
+    flex: 1 1 200px;
+    text-align: center;
+    justify-content: center;
+    h2,
+    h3,
+    p {
+      color: #010b13;
+    }
+    h2 {
+      font-size: 3rem;
+      font-weight: 700;
+      padding-bottom: 1rem;
+    }
+    h3 {
+      padding-top: 1rem;
+      font-size: 2rem;
+      font-weight: 800;
+    }
+    p {
+      padding: 1rem 8rem;
+      font-size: 1.3rem;
+    }
+
+    & img {
+      width: 200px;
+    }
+  }
+}

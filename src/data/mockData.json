@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "title": "Nintendo Switch Oled",
+    "image": "consola_01",
+    "price": 300,
+    "description": "Consola Nintendo Switch Oled Edicion Zelda - Tears of Kingdom.",
+    "category": "consolas",
+    "stock": 100
+  },
+  {
+    "id": 2,
+    "title": "Play Station 5",
+    "image": "consola_02",
+    "price": 600,
+    "description": "Consola Play Station 5 Bundle pack + 2 juegos: Returnal, Ratchet Clank.",
+    "category": "consolas",
+    "stock": 100
+  },
+  {
+    "id": 3,
+    "title": "XBox serie X",
+    "image": "consola_03",
+    "price": 350,
+    "description": "Consola XBox serie X Edicion Gear of War 4 Aniversary.",
+    "category": "consolas",
+    "stock": 100
+  },
+  {
+    "id": 4,
+    "title": "Mario Kart Delux",
+    "image": "juego_01",
+    "price": 59,
+    "description": "Juego Mario Kart Delux 8.",
+    "category": "juegos",
+    "stock": 100
+  },{
+    "id": 5,
+    "title": "Hogwarts Legacy",
+    "image": "juego_02",
+    "price": 49,
+    "description": "Juego Harry Potter Hogwards Legacy.",
+    "category": "juegos",
+    "stock": 100
+  },{
+    "id": 6,
+    "title": "Halo",
+    "image": "juego_03",
+    "price": 42,
+    "description": "Juego Halo Infinite.",
+    "category": "juegos",
+    "stock": 100
+  },
+  {
+    "id": 7,
+    "title": "Nintendo Labo",
+    "image": "accesorio_01",
+    "price": 150,
+    "description": "Kit de juegos Nintendo Labo crea, juega y descubre.",
+    "category": "accesorios",
+    "stock": 100
+  },
+  {
+    "id": 8,
+    "title": "Play Station VR",
+    "image": "accesorio_02",
+    "price": 650,
+    "description": "Mega Pack Play Station VR + 5 Juegos: World, Skyrim, Astrobot, Resident Evil VII y Golf VR.",
+    "category": "accesorios",
+    "stock": 100
+  },
+  {
+    "id": 9,
+    "title": "Flight simulator",
+    "image": "accesorio_03",
+    "price": 550,
+    "description": "Sistema de Juego Microsoft Flight Simulator, incluye mandos, pedales y control principal.",
+    "category": "accesorios",
+    "stock": 100
+  }
+
+]
